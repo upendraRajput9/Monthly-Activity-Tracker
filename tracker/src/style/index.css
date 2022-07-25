@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* variables */
+.root {
+  --Primary: rgb(89, 191, 194);
+  --Secondary: white;
+  --text-dark: rgb(40, 62, 125);
+  --bg-light: rgb(213, 229, 229);
+  --text-light: rgb(110, 113, 120);
+}
+/* general classes */
+.center {
+  text-align: center;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.padding {
+  padding: 1rem;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  color: var(---Secondary);
+  background-color: var(---Primary);
+}
+/* flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify-end {
+  justify-content: end;
+}
+
+.display-flex {
+  display: flex;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-45 {
+  flex: 0 1 45%;
+}
+.flex-40 {
+  flex: 0 1 40%;
+}
+/* input */
+.inputForm {
+  text-align: center;
+}
+h1 {
+  font-size: 2.4rem;
+  color: rgb(63, 142, 208);
+  font-weight: 540;
+}
+.cards-list article {
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+/* cross */
+.cross {
+  right: 0.5rem;
+  top: 0.5rem;
+  position: absolute;
+  background-color: rgb(241, 70, 103);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
+.task {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(239, 245, 250);
+}
+ul {
+  padding: 1rem 0;
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+  width: 68%;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2.2rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+li:hover {
+  border: 1px solid blue;
+}
+button {
+  border: none;
+  background-color: rgb(3, 209, 178);
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  padding: 0.6rem 1rem;
+  margin-right: 12px;
+  border-radius: 0 4px 4px 0;
+}
+input {
+  width: 20%;
+  font-size: 1rem;
+  padding: 10px 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+input::placeholder {
+  color: rgb(168, 168, 168);
+}
+input:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.active {
+  background-color: rgb(3, 209, 178);
+  color: white;
+}
+h2 {
+  font-size: 1.5rem;
+  color: rgb(74, 74, 74);
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+h3 {
+  background-color: rgb(255, 98, 71);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  padding-bottom: 5px;
+}
